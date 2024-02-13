@@ -14,6 +14,20 @@ struct ContentView: View {
                 .imageScale(.large)
                 .foregroundStyle(.tint)
             Text("Hello, world!")
+            
+            Button(action: { print("Qwertyi was tapped") })
+            {
+                Text("Button")
+            }
+            .padding()
+            .foregroundStyle(.white)
+            .background {
+                RoundedRectangle(cornerRadius: 16, style: .continuous)
+                    .fill(.blue)
+                    .shadow(color: .black, radius: 6, x: 6, y: 6)
+            }
+            .padding()
+            
         }
         .padding()
     }
